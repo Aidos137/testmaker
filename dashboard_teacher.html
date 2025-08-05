@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html><head><title>Панель учителя</title></head><body>
+<h2>Добро пожаловать, учитель {{ session.username }}</h2>
+<ul>
+    <li><a href="{{ url_for('add_test') }}">Добавить тест</a></li>
+    <li><a href="{{ url_for('take_test') }}">Просмотреть тест</a></li>
+    <li><a href="{{ url_for('logout') }}">Выход</a></li>
+</ul></body></html>
